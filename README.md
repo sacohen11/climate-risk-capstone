@@ -44,7 +44,16 @@ One major thing to know is that the bulk of the data comes from the 10-K file do
 computer and parsed. Make sure you have plenty of space (at least 10GBs) on your computer to handle the downloaded 10-K files. In additon,
 the sec_edgar_downloader package that is used to download the 10-K files doesn't always work. This is likely due to the SEC's API either
 not giving access or being bombarded by other trying to access those files. I have found that it works best later in the day and at night.
-You may have to be patient if you get an error with the HTTP request to download a 10-K file.
+You may have to be patient if you get an error with the HTTP request to download a 10-K file. The error I often get is:
+
+    requests.exceptions.HTTPError: 500 Server Error: Internal Server Error for url: https://efts.sec.gov/LATEST/search-index
+    
+If this happens and you have already downloaded some files, you can comment out line 149 in the extract_10_k.py file, which is:
+
+    dl.get("10-K", cik, after="2015-01-01", download_details=False)
+    
+and then run the main.py or run.py file again. This way you will not be downloading the files anymore and will still be able
+to run predicitions on the files you have already downloaded.
 
 ## Visualization
 
