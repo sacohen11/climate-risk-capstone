@@ -2,7 +2,7 @@
 
 This is the GitHub repository associated with my capstone project for the GWU Data Science Master's Program.
 
-My capstone project is title "<b>Can You Clarify?: Using NLP to Determine the Specificity of Climate-Related Financial Disclosures<b/>".
+My capstone project is title "**Can You Clarify?: Using NLP to Determine the Specificity of Climate-Related Financial Disclosures**".
 
 My work relies heavily on two papers. Their citations are listed here:
 
@@ -49,6 +49,6 @@ You may have to be patient if you get an error with the HTTP request to download
 ## Visualization
 
 There is a github.io page with a visualization and an explanation of the research pipeline! Please check it out to learn more about
-how I got the results. There is a button to the top-right of this text that is under the header <b>Environments</b>. Click on the
-github-pages link and then click on the first Development button to pull up the visualization. Scroll down through it to learn about
+how I got the results. There is a button to the top-right of this text that is under the header **Environments**. Click on the
+*github-pages* link and then click on the first *Development* button to pull up the visualization. Scroll down through it to learn about
 my paper.
