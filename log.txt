@@ -1,0 +1,38 @@
+/opt/anaconda3/lib/python3.7/site-packages/requests/__init__.py:91: RequestsDependencyWarning: urllib3 (1.26.2) or chardet (3.0.4) doesn't match a supported version!
+  RequestsDependencyWarning)
+Traceback (most recent call last):
+  File "main.py", line 3, in <module>
+    import extract_10_k
+  File "/Users/SamC/Desktop/capstone/code/extract_10_k.py", line 4, in <module>
+    from datapackage import Package
+  File "/opt/anaconda3/lib/python3.7/site-packages/datapackage/__init__.py", line 13, in <module>
+    from .package import Package
+  File "/opt/anaconda3/lib/python3.7/site-packages/datapackage/package.py", line 19, in <module>
+    from tableschema import Storage
+  File "/opt/anaconda3/lib/python3.7/site-packages/tableschema/__init__.py", line 13, in <module>
+    from .table import Table
+  File "/opt/anaconda3/lib/python3.7/site-packages/tableschema/table.py", line 12, in <module>
+    from .schema import Schema
+  File "/opt/anaconda3/lib/python3.7/site-packages/tableschema/schema.py", line 13, in <module>
+    from .profile import Profile
+  File "/opt/anaconda3/lib/python3.7/site-packages/tableschema/profile.py", line 11, in <module>
+    import jsonschema
+  File "/opt/anaconda3/lib/python3.7/site-packages/jsonschema/__init__.py", line 32, in <module>
+    from pkg_resources import get_distribution
+  File "/opt/anaconda3/lib/python3.7/site-packages/pkg_resources/__init__.py", line 3250, in <module>
+    @_call_aside
+  File "/opt/anaconda3/lib/python3.7/site-packages/pkg_resources/__init__.py", line 3234, in _call_aside
+    f(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.7/site-packages/pkg_resources/__init__.py", line 3263, in _initialize_master_working_set
+    working_set = WorkingSet._build_master()
+  File "/opt/anaconda3/lib/python3.7/site-packages/pkg_resources/__init__.py", line 574, in _build_master
+    ws = cls()
+  File "/opt/anaconda3/lib/python3.7/site-packages/pkg_resources/__init__.py", line 567, in __init__
+    self.add_entry(entry)
+  File "/opt/anaconda3/lib/python3.7/site-packages/pkg_resources/__init__.py", line 623, in add_entry
+    for dist in find_distributions(entry, True):
+  File "/opt/anaconda3/lib/python3.7/site-packages/pkg_resources/__init__.py", line 2065, in find_on_path
+    for dist in factory(fullpath):
+  File "/opt/anaconda3/lib/python3.7/site-packages/pkg_resources/__init__.py", line 2127, in distributions_from_metadata
+    if len(os.listdir(path)) == 0:
+KeyboardInterrupt
